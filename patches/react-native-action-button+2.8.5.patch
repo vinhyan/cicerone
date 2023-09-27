@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-action-button/ActionButton.js b/node_modules/react-native-action-button/ActionButton.js
+index b8306c2..605d1b0 100644
+--- a/node_modules/react-native-action-button/ActionButton.js
++++ b/node_modules/react-native-action-button/ActionButton.js
+@@ -39,7 +39,7 @@ export default class ActionButton extends Component {
+     clearTimeout(this.timeout);
+   }
+ 
+-  componentWillReceiveProps(nextProps) {
++  componentDidUpdate(nextProps) {
+     if (nextProps.resetToken !== this.state.resetToken) {
+       if (nextProps.active === false && this.state.active === true) {
+         if (this.props.onReset) this.props.onReset();

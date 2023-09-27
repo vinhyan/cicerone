@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "rnss23-group-cicerone",
+    "slug": "rnss23-group-cicerone"
+  }
+}
